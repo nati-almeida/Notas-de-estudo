@@ -1,0 +1,24 @@
+{
+  "name": "notas-de-estudo",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/nati-almeida/Notas-de-estudo#readme",
+  "bugs": {
+    "url": "https://github.com/nati-almeida/Notas-de-estudo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nati-almeida/Notas-de-estudo.git"
+  },
+  "license": "ISC",
+  "author": "Natália",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
