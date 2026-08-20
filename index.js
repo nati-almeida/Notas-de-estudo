@@ -107,8 +107,18 @@ app.post("/api/salario", (req, res) => {
 })
 
 //3. Peça o peso de 5 pessoas e calcule a média desses pesos. Mostre o resultado.
+app.post("/api/media", (req, res) => {
+  const p1 = req.body.p1;
+  const p2 = req.body.p2;
+  const p3 = req.body.p3;
+  const p4 = req.body.p4;
+  const p5 = req.body.p5;
 
+  const media = (p1 + p2 + p3 + p4 + p5) / 5
 
+  res.send({ message: media});
+
+})
 
 //4. Peça uma temperatura em graus Celsius e converta para Fahrenheit usando a fórmula:    F = (9 * C + 160) / 5
 
