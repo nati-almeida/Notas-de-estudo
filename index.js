@@ -1,7 +1,7 @@
 //console.log("hello world");
 import express from 'express' // type module 
 
-import router from './src/router/exercicio.js'
+import router from './src/router/pessoa.js'
 
 
 // const espress =  (require express")// type common JS
