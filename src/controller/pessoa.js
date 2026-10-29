@@ -2,9 +2,9 @@ import ServicePessoa from '../service/pessoa.js'
 
 class ControllerPessoa {
 
-    Buscar(req, res) {
+    async Buscar(req, res) {
         try {
-          const nomes = ServicePessoa.Buscar()
+          const nomes = await ServicePessoa.Buscar()
 
     res.send({nomes})
     } catch (e){
@@ -25,10 +25,10 @@ class ControllerPessoa {
 } 
 
 
-    Criar(req, res) {
+    async Criar(req, res) {
     try{
         const nome = req.body.nome
-        Service.Criar
+       await Service.Criar
         
         res.send({message: "Criado com sucesso"})
     } catch (error){
